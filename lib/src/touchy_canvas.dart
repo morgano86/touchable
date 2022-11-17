@@ -530,10 +530,15 @@ class TouchyCanvas {
 // TODO: implement drawVertices
 //  }
 
-//
-//  void rotate(double radians) {
-//    // TODO: implement rotate
-//  }
+  void rotate(double radians) {
+      _canvas.rotate(radians);
+      _shapeHandler.rotate(radians);
+  }
+
+  void scale(double sx, [double? sy]) {
+    _canvas.scale(sx, sy);
+    _shapeHandler.scale(sx, sy);
+  }
 
 //
 //  void scale(double sx, [double sy]) {
